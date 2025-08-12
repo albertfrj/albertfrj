@@ -1,0 +1,63 @@
+
+COMANDOS BÁSICOS DE GIT
+
+1. Inicializar un repositorio:
+   git init
+   - Convierte la carpeta actual en un repositorio de Git.
+
+2. Conectar a un repositorio remoto:
+   git remote add origin <URL-DEL-REPO>
+   - Asocia el repositorio local a uno remoto (GitHub, GitLab, etc.).
+
+3. Ver estado del repositorio:
+   git status
+   - Muestra los archivos modificados, nuevos o en espera de commit.
+
+4. Agregar archivos al área de preparación:
+   git add .
+   - Agrega todos los cambios para el próximo commit.
+   git add <archivo>
+   - Agrega solo un archivo específico.
+
+5. Crear un commit:
+   git commit -m "Mensaje descriptivo"
+   - Guarda los cambios en el historial de Git con un mensaje.
+
+6. Crear una nueva rama y cambiar a ella:
+   git checkout -b <nombre-de-rama>
+   - Crea una rama y te mueve a ella.
+
+7. Cambiar a una rama existente:
+   git checkout <nombre-de-rama>
+
+8. Ver ramas disponibles:
+   git branch
+   - Lista todas las ramas locales.
+
+9. Subir cambios al repositorio remoto:
+   git push -u origin <nombre-de-rama>
+   - Sube la rama y establece el seguimiento remoto.
+
+10. Actualizar tu repositorio local con cambios remotos:
+    git pull
+    - Descarga y combina cambios desde el repositorio remoto.
+
+11. Clonar un repositorio:
+    git clone <URL-DEL-REPO>
+    - Descarga una copia completa de un repositorio remoto.
+
+12. Ver historial de commits:
+    git log
+    - Muestra la lista de commits realizados.
+
+13. Eliminar un archivo del repositorio:
+    git rm <archivo>
+    - Elimina el archivo y lo marca para el commit.
+
+14. Descartar cambios no confirmados:
+    git checkout -- <archivo>
+    - Reemplaza el archivo con la última versión confirmada.
+
+15. Fusionar ramas:
+    git merge <nombre-de-rama>
+    - Combina otra rama con la actual.
